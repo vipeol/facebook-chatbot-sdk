@@ -1,0 +1,19 @@
+{
+    "name": "vipeol/facebook-chatbot-sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius Pedrosa",
+            "email": "vinicius.pedrosa@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeBot\\": "src"
+        }
+    }
+}
