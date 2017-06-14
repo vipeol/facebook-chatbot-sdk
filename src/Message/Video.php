@@ -2,7 +2,8 @@
 
 namespace CodeBot\Message;
 
-class Text implements Message
+
+class Video implements Message
 {
     private $recipientId;
 
@@ -10,7 +11,6 @@ class Text implements Message
     {
         $this->recipientId = $recipientId;
     }
-
     public function message(string $messageText) : array
     {
         return [
@@ -18,8 +18,12 @@ class Text implements Message
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $messageText,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'video',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
             ]
         ];
     }
