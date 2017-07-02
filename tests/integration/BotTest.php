@@ -3,12 +3,11 @@
 namespace CodeBot;
 
 use CodeBot\Build\Solid;
-use PHPUnit\Framework\Constraint\IsTrue;
 use PHPUnit\Framework\TestCase;
 
 class BotTest extends TestCase
 {
-    private $pageAccessToken = 'EAAbIFaek3NQBAJWLbngyGqpgeZAZAg2wAAS1EJTkt6OnQKTzL5B1CAZArUELtIs1lspHQGepSTv9Rg4BEhZCGYDknUiT4uAsOvIEt7x4Hl7eODZCaLC1W48iGQZARio0xkcZCZCQ9ZB6xOz3mjirHy4UfidC7EIHzjhj9a1h6QQzxkgZDZD';
+    private $pageAccessToken = 'AQUI_VAI_O_PAGE_ACCESS_TOKEN';
     public function testAddMenu()
     {
         $call_to_actions = [
